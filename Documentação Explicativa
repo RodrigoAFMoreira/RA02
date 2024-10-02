@@ -1,0 +1,10 @@
+Codigo referente a uma arvore binaria em que os caracteres estão relacionados pela representação ponto (esquerda) e traço (direita). 
+
+Ele possui métodos para inicializar a árvore, este usa populaArvore com suas entradas com as representações em morse dos caracteres e insere novos caracteres criando a arvore de imediato. A lógica segue: a árvore é criada com uma raiz,e o método popularArvore()
+insere os caracteres e suas respectivas representações pelos seus codigos morse (. -), utilizando o método insere(), o qual percore a árvore de acordo com a sequência(. -), criando novos nós conforme necessário, até que o caractere 
+correspondente seja atribuído ao nó final.
+
+Também contem metodo de busca, o qual procura caracteres e decodifica sequências de código morse a partir de uma entrada do usuário. A lógica segue: o método busca() percorre a árvore a 
+partir da raiz, seguindo referências para os filhos ponto e traço de acordo com os símbolos morse. Se um símbolo for '.' o método avança para o filho esquerdo; se for '-' avança para o filho 
+direito. No final ele retorna o caractere armazenado no nó correspondente ou um valor nulo se o código não for encontrado. O método decodifica() lê a entrada do usuário, divide a sequência em códigos morse (separados 
+por espaços) e utiliza o método busca() para converter cada um deles em um caractere, acumulando a palavra decodificada e exibindo-a ao final traduzida.
